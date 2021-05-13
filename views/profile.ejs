@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<%- include('parts/header') %>
+
+<%- include('parts/navbar') %>
+
+<section id="profile" class="py-5">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-5">
+                <div class="card-header mb-4 profileCont">
+                    <img src="images/profile.png" class="profileImg" alt="blog image">
+                </div>
+            </div>          
+            <div class="card-body py-2 col-7">
+                <h5 class="card-title"><span><%= user.firstname +" " + user.lastname %></span></h5>
+                <h5 class="card-title"><span><%= user.email %></span></h5>
+                <div class="content">
+                    <p>Posts : <span><%= posts.length %></span></p>
+                    <p>Following : <span><%= user.following.length %> </span></p>
+                </div>
+            </div>
+        </div>
+        <div class="card mb-3">    
+            <%  if(posts.length > 0){%>
+              <% posts.forEach(post =>{ %>
+                <div class="card-footer mt-4 mb-3">
+                    <div class="mb-3">
+                        <div class="row no-gutters">
+                            <div class="col-4">
+                                <img src="<%=post.photo%>" class="card-img img-fluid mainImg" alt="blog image">
+                            </div>
+                            <div class="col-8">
+                                <div class="card-body ">
+                                    <h4 class="card-title text-center"><%= post.title %></h4>
+                                    <p class="card-text"><%= post.content %></p>
+                                    <p class="text-muted text-center"><%= post.createdAt %></p>
+
+                                    <div class=" mt-2 text-center">
+                                        <form action="/posts/<%=post._id%>?_method=DELETE" method="POST">
+                                            <a href="posts/edit/<%=post._id%>" class="btn btn-primary  btn-outline "> Edit</a>
+                                            <button type="submit" class="btn btn-danger btn-outline ">Delete</button>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <%})%>
+            <% } else { %> 
+           </div>
+           <h3 class="text-center alert alert-danger" > No Posts Available Now ..</h3>  <% } %>
+    </div>
+</section>
+ 
+ 
+<%- include('parts/footer') %>
+
+

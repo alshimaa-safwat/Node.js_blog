@@ -1,0 +1,276 @@
+
+body {
+    background: #ebdfe1;
+    font-size: 16px;
+    line-height: 1.66em;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: 400;
+    color:#000;
+    box-shadow: none;
+    
+}
+
+/*-------------------------------------------------------*/
+
+#to-top{
+	  display: block;
+    background: #ca4d90;
+    color: #efe8e8;
+    width: 50px;
+    height: 50px;
+    line-height: 45px;
+    position: fixed;
+    bottom: 90px;
+    right: 30px;
+    border-radius: 50%;
+    text-align: center;
+    cursor: pointer;
+    font-size: 1.5em;
+    text-decoration:none;
+}
+
+/*-------------------------------------------------------*/
+
+input,textarea:focus
+ {
+  box-shadow: none !important;
+ }
+
+ #heading{
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 15px;
+  }
+
+/*--------------------------------------------------*/
+.navbar-toggler{
+  width: 47px;
+  height: 34px;
+  /* background-color: transparent; */
+  border:none;
+}
+.navbar-toggler .line{
+  width: 100%;
+  float: left;
+  height: 2px;
+  background-color: #FFF;
+  margin-bottom: 5px;
+}
+/*--------------------------------------------------*/
+
+
+#reg .register
+{
+    margin-top: 90px;
+    margin-bottom: 80px;
+}
+
+#reg .form-control
+{
+    box-shadow: none;
+    
+}
+
+#reg button
+{
+  font-size: large !important;
+  background-color:  #ca4d90 !important;
+  color: #FFF !important;
+  padding: 7px 15px ;
+  border-radius: 5px !important;
+
+}
+
+
+/*--------------------------------------------------*/
+h2
+{
+    text-transform: uppercase;
+    font-size: 27px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #ca4d90;
+}
+/*------------------------------------------------*/
+/*---------------------for login page---------------------------*/
+.ask
+{
+  color: #000;
+}
+.ask a
+{
+  color: #ca4d90;
+  font-weight: 600;
+  font-size: 16px;
+}
+/*------------------------------------------------*/
+/*-----------------------nav-------------------------*/
+nav
+{
+
+  font-weight: 600;
+  background-color: #ca4d90;
+  color: #fff;
+}
+nav a
+{
+  color: #fff !important;
+}
+.logout
+{
+  color: #FFF !important; 
+  background: none;
+  font-weight:bold;
+}
+
+.form-control, .form-group{
+  height:52px;
+}
+
+/*----------------blog---------------------------*/
+#blog , #profile
+{
+  margin-bottom: 40px;
+}
+#blog h4 ,h5
+{
+  font-weight: 600;
+  color: #ca4d90;
+  
+}
+#blog h5
+{
+  font-size: 14px;
+}
+.mainImg
+{
+  height: 240px;
+  width: 100% !important;
+  border-top-left-radius:20px;
+  border-bottom-left-radius:20px
+}
+#blog button
+{
+  font-size: large !important;
+  background-color:  #ca4d90 !important;
+  color: #FFF !important;
+  padding: 7px 15px ;
+  border-radius: 5px !important;
+
+}
+
+#blog .card{
+  width: 70%;
+  margin: 15px auto;
+  border-radius:20px;;
+  -webkit-border-radius:20px;
+  -moz-border-radius:20px;
+  -ms-border-radius:20px;
+  -o-border-radius:20px;
+}
+/*------------------------------------------------*/
+/*--------------------profile---------------------*/
+#profile .profileImg
+{
+  width: 45%;
+  height: 15%;
+}
+
+#profile .card{
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    border:none;
+    background-color: transparent;
+    border-radius:20px;
+    -webkit-border-radius:20px;
+    -moz-border-radius:20px;
+    -ms-border-radius:20px;
+    -o-border-radius:20px;
+}
+
+
+#profile .card-header{
+  padding: .75rem 1.25rem;
+
+}
+
+.profileCont{
+  background:none;
+  border:none;
+}
+
+#profile span
+{
+  color: #ab87bd;
+  font-size: 20pz;
+  font-size: 16px;
+  letter-spacing: 1;
+  letter-spacing: 2px;
+}
+#profile .content p
+{
+  display: inline;
+  font-size: medium;
+  color: #73435D;
+  font-weight: 700;
+  font-size: 17px;
+  margin-right: 10px;
+}
+#profile h3
+{
+  font-weight: 700;
+  text-align: center;
+  color: #73435D;
+}
+#profile button
+{
+ font-size: 15px; 
+  color: #FFF !important;
+  border-radius: 5px !important;
+}
+#profile .card-footer{
+    padding: .75rem 1.25rem;
+    background-color: #fff;
+    border-top: 1px solid rgba(0,0,0,.125);
+    width: 70%;
+    margin: 15px auto;
+}
+
+#profile .card-body{
+  padding:0px 10px;
+}
+
+#profile form a,#profile form button{
+  width:100px;
+  height:40px;
+}
+
+
+/*---------------------------------------------------------*/
+
+#plusBtn
+{
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    z-index: 10;
+    background-color: #FFF;
+    
+}
+/*---------------------------------------------------------*/
+
+@media (max-width :991px)
+{ 
+  body
+    {
+      font-size: 12px !important;
+      
+    }  
+   
+}
+/*--------------------------------------------------*/
